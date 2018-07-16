@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Test Socket</title>
+</head>
+<body>
+<div id="app">
+    <input v-model="user_name" type="text" placeholder="请输入您的昵称">
+    <input v-model="input_msg" type="text" placeholder="请输入您要说的话">
+    <button @click="send">发送</button>
+    <p>{{ hit }}</p>
+    <ul>
+        <li v-for="i in web_msg">{{ i.name + '：' + i.msg }}</li>
+    </ul>
+</div>
+
+<script src="plugs/socket.io.js"></script>
+<script src="plugs/vue.min.js"></script>
+<script src="plugs/index.js"></script>
+</body>
+</html>
