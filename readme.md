@@ -39,3 +39,6 @@ let socket = io('ws://localhost:3000');
 socket.emit('login', {});
 
 ```
+
+> 学习参考：[Socket.IO英文文档](https://socket.io/docs/)
+
